@@ -60,6 +60,8 @@
         leadingSpace.constant = -16;
         trailingSpace.constant = -16;
         
+        [self.view layoutIfNeeded];
+        
         
     } completion:^(BOOL finished) {
         
@@ -68,6 +70,8 @@
             textField.backgroundColor = [UIColor whiteColor];
             leadingSpace.constant = 4;
             trailingSpace.constant = 4;
+            
+            [self.view layoutIfNeeded];
             
         }];
     }];
